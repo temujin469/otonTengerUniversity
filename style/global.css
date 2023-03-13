@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/*=============== VARIABELS CSS ===============*/
+:root {
+  --nav-widht: 91px;
+  /*===== COLORS =====*/
+  --first-clr: rgb(28, 158, 245);
+  --bg-clr: rgb(19, 26, 36);
+  --primary-clr: rgb(255, 174, 0);
+  --sub-clr: rgb(202, 202, 202);
+  --main-bg-clr: #fafafa;
+  --white-clr: #fff;
+  /*===== FONT =====*/
+  --body-font: "Poppins", sans-serif;
+  /* --body-font: "Kanit", sans-serif; */
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+}
+/*==================== BASE =====================*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+::selection {
+  background: var(--primary-clr);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  position: relative;
+  transition: 0.5s;
+  background-color: var(--main-bg-clr);
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* @media (max-width: 1300px) {
+  .container {
+    max-width: 950px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+} */
+
+@media (max-width: 1230px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

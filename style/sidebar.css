@@ -1,0 +1,121 @@
+/*=============== VARIABELS CSS ===============*/
+:root {
+  --nav-widht: 0px;
+  /*===== COLORS =====*/
+  --first-clr: rgb(28, 158, 245);
+  --bg-clr: rgb(19, 26, 36);
+  --sub-clr: rgb(202, 202, 202);
+  --white-clr: #fff;
+  /*===== FONT =====*/
+  --body-font: "Kanit", sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+}
+
+/*================== L-NAV-BAR ====================*/
+.l-nav-bar {
+  position: fixed;
+  width: var(--nav-widht);
+  height: 100vh;
+  user-select: none;
+  overflow-y: scroll;
+  left: -100%;
+  width: 300px;
+  top: 0;
+  background-color: var(--bg-clr);
+  color: var(--white-clr);
+  padding: 1.5rem 1.5rem 2rem;
+  z-index: 100;
+  transition: 0.5s;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .l-nav-bar {
+    display: block;
+  }
+}
+
+/*==================== NAV =====================*/
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.nav-brand {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 2rem 0;
+}
+.nav-toggle {
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+.nav-logo {
+  color: var(--white-clr);
+  font-weight: 400;
+}
+.nav-link {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  padding: 0.75rem;
+  column-gap: 0.75rem;
+  color: var(--white-clr);
+  margin-bottom: 1rem;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.nav-link:hover {
+  background-color: var(--first-clr);
+}
+.nav-link:hover.nav-link {
+  color: var(--bg-clr);
+}
+.nav-icon {
+  font-size: 1.25rem;
+}
+.nav-name {
+  font-size: var(--small-font-size);
+}
+.expander {
+  left: 0;
+}
+/*==================== ACTIVE LINKS MENU ===============*/
+.active {
+  background-color: var(--first-clr);
+  color: var(--bg-clr);
+}
+/*=================== COLLAPSE =================*/
+.collapse {
+  grid-template-columns: 30px max-content 1fr;
+}
+.collapse-link {
+  justify-self: end;
+  transition: 0.5s;
+}
+.collapse-menu {
+  padding: 0.75rem 2.25rem;
+  display: none;
+}
+.collapse-sublink {
+  color: var(--sub-clr);
+  font-size: var(--small-font-size);
+}
+.collapse-sublink:hover {
+  color: var(--bg-clr);
+}
+.show-collapse {
+  display: block;
+}
+/*================== RATOTE ICON ================*/
+.ratote {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}

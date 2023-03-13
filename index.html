@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slide bar</title>
+
+  <!--=====CSS=====-->
+  <link rel="stylesheet" href="./style/global.css">
+  <link rel="stylesheet" href="./style/home.css">
+  <link rel="stylesheet" href="./style/sidebar.css">
+  <link rel="stylesheet" href="./style/banner.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/footer.css">
+  <link rel="stylesheet" href="./style/clock.css">
+  <link rel="stylesheet" href="./style/card.css">
+  <link rel="stylesheet" href="./style/idCard.css">
+  <link rel="stylesheet" href="./style/bookFlip.css">
+
+  <link rel="stylesheet" href="./style/contactForm.css">
+  <!--=====GOOGLE FONTS=====-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e61ce33beb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img src="/image/logo.png" alt="">
+          <a href="#">
+            <h3>ОТГОНТЭНГЭР</h3>
+            <p>ИХ СУРГУУЛЬ</p>
+          </a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li class="active"><a href="#">Нүүр</a></li>
+          <li><a href="#">ЭЛСЭЛТ</a></li>
+          <li><a href="#">Оюутан</a></li>
+          <li><a href="#">Салбар СУРГУУЛь</a></li>
+          <li><a href="#">бидний тухай</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="l-nav-bar" id="nav-bar">
+    <nav>
+      <div>
+        <div class="nav-brand">
+          <ion-icon name="menu-outline" class="nav-toggle"></ion-icon>
+          <a href="#" class="nav-logo">temuujin</a>
+        </div>
+        <div class="nav-list">
+          <a href="#" class="nav-link">
+            <ion-icon name="home-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Dashboard</span>
+          </a>
+          <a href="#" class="nav-link">
+            <ion-icon name="chatbubbles-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Messenger</span>
+          </a>
+          <a href="#" class="nav-link">
+            <ion-icon name="people-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Team</span>
+          </a>
+          <div href="#" class="nav-link collapse">
+            <ion-icon name="settings-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Setting</span>
+
+            <ion-icon name="chevron-down-outline" class="collapse-link"></ion-icon>
+
+            <ul class="collapse-menu">
+              <a href="#" class="collapse-sublink">data</a>
+              <a href="#" class="collapse-sublink">data</a>
+              <a href="#" class="collapse-sublink">data</a>
+            </ul>
+          </div>
+          <div href="#" class="nav-link collapse">
+            <ion-icon name="folder-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Project</span>
+
+            <ion-icon name="chevron-down-outline" class="collapse-link"></ion-icon>
+
+            <ul class="collapse-menu">
+              <a href="#" class="collapse-sublink">this</a>
+              <a href="#" class="collapse-sublink">data</a>
+              <a href="#" class="collapse-sublink">data</a>
+            </ul>
+          </div>
+          <a href="#" class="nav-link">
+            <ion-icon name="duplicate-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">About</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-link">
+        <ion-icon name="log-out-outline" class="nav-icon"></ion-icon>
+        <span class="nav-name">log out</span>
+      </div>
+    </nav>
+  </div>
+  <div class="banner">
+    <div class="container bannerWrapper">
+      <div class="text">
+        <h3>
+          Бүр их сургуульд элсэн орно гэсэн эхний шийдвэр л ирээдүйд хэн болохыг тодорхойлох нь бий.
+        </h3>
+        <p>2014 онд Нягтлан бодох бүртгэл, Санхүүгийн менежмент, Олон улсын эрх зүй,</p>
+      </div>
+      <div>
+        <div class="clock">
+          <div class="outer-clock-face">
+            <div class="marking marking-one"></div>
+            <div class="marking marking-two"></div>
+            <div class="marking marking-three"></div>
+            <div class="marking marking-four"></div>
+            <div class="inner-clock-face">
+              <div class="hand hour-hand"></div>
+              <div class="hand min-hand"></div>
+              <div class="hand second-hand"></div>
+            </div>
+          </div>
+          <!-- <img src="/image/study.png" alt=""> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="section_1">
+    <div class="container">
+      <div class="row">
+        <div class="bookContainer">
+          <div class="book">
+            <span class="page turn"></span>
+            <span class="page turn"></span>
+            <span class="page turn"></span>
+            <span class="page turn">sdsd</span>
+            <span class="page turn"></span>
+            <span class="page turn"></span>
+            <span class="cover"></span>
+            <span class="page"></span>
+            <span class="cover turn"></span>
+          </div>
+        </div>
+        <div class="text">
+          <h3>
+            Бүр их сургуульд элсэн орно гэсэн эхний шийдвэр л ирээдүйд хэн болохыг тодорхойлох нь бий.
+          </h3>
+          <p>2014 онд Нягтлан бодох бүртгэл, Санхүүгийн менежмент, Олон улсын эрх зүй,</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section_2">
+    <div class="container">
+      <div class="wrapper">
+        <div class="card_wrapper">
+          <div class="card" id="bright">
+            <div class="info_section">
+              <div class="card_header">
+                <img class="locandina"
+                  src="https://movieplayer.net-cdn.it/t/images/2017/12/20/bright_jpg_191x283_crop_q85.jpg" />
+                <h1>Эрх зүй</h1>
+                <h4>Суралцах хугацаа : 4 жил</h4>
+                <span class="minutes">480 оноо</span>
+                <p class="type">Бакалаврын зэрэг олгох хөтөлбөр</p>
+              </div>
+              <div class="card_desc">
+                <p class="text">
+                  Элсэлтийн шалгалт:
+
+                  Нийгмийн тухай мэдлэг | Монгол хэл | Англи хэл | Математик
+                </p>
+              </div>
+              <div class="card_footer">
+                <button class="btn_1">
+                  Дэлгэрэнгүй
+                </button>
+              </div>
+            </div>
+            <div class="blur_back bright_back"></div>
+          </div>
+        </div>
+        <div class="card_wrapper">
+          <div class="card" id="bright">
+            <div class="info_section">
+              <div class="card_header">
+                <img class="locandina"
+                  src="https://movieplayer.net-cdn.it/t/images/2017/12/20/bright_jpg_191x283_crop_q85.jpg" />
+                <h1>Эрх зүй</h1>
+                <h4>Суралцах хугацаа : 4 жил</h4>
+                <span class="minutes">480 оноо</span>
+                <p class="type">Бакалаврын зэрэг олгох хөтөлбөр</p>
+              </div>
+              <div class="card_desc">
+                <p class="text">
+                  Элсэлтийн шалгалт:
+
+                  Нийгмийн тухай мэдлэг | Монгол хэл | Англи хэл | Математик
+                </p>
+              </div>
+              <div class="card_footer">
+                <button class="btn_1">
+                  Дэлгэрэнгүй
+                </button>
+              </div>
+            </div>
+            <div class="blur_back bright_back"></div>
+          </div>
+        </div>
+        <div class="card_wrapper">
+          <div class="card" id="bright">
+            <div class="info_section">
+              <div class="card_header">
+                <img class="locandina"
+                  src="https://movieplayer.net-cdn.it/t/images/2017/12/20/bright_jpg_191x283_crop_q85.jpg" />
+                <h1>Эрх зүй</h1>
+                <h4>Суралцах хугацаа : 4 жил</h4>
+                <span class="minutes">480 оноо</span>
+                <p class="type">Бакалаврын зэрэг олгох хөтөлбөр</p>
+              </div>
+              <div class="card_desc">
+                <p class="text">
+                  Элсэлтийн шалгалт:
+
+                  Нийгмийн тухай мэдлэг | Монгол хэл | Англи хэл | Математик
+                </p>
+              </div>
+              <div class="card_footer">
+                <button class="btn_1">
+                  Дэлгэрэнгүй
+                </button>
+              </div>
+            </div>
+            <div class="blur_back bright_back"></div>
+          </div>
+        </div>
+        <div class="card_wrapper">
+          <div class="card" id="bright">
+            <div class="info_section">
+              <div class="card_header">
+                <img class="locandina"
+                  src="https://movieplayer.net-cdn.it/t/images/2017/12/20/bright_jpg_191x283_crop_q85.jpg" />
+                <h1>Эрх зүй</h1>
+                <h4>Суралцах хугацаа : 4 жил</h4>
+                <span class="minutes">480 оноо</span>
+                <p class="type">Бакалаврын зэрэг олгох хөтөлбөр</p>
+              </div>
+              <div class="card_desc">
+                <p class="text">
+                  Элсэлтийн шалгалт:
+
+                  Нийгмийн тухай мэдлэг | Монгол хэл | Англи хэл | Математик
+                </p>
+              </div>
+              <div class="card_footer">
+                <button class="btn_1">
+                  Дэлгэрэнгүй
+                </button>
+              </div>
+            </div>
+            <div class="blur_back bright_back"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section_3">
+    <div class="container">
+      <div class="id-card_wrapper">
+
+        <div id="id-card">
+          <div class="id-card material-ui-shadow">
+
+            <!-- \\ user image -->
+            <div class="id-card__user_img">
+              <img src="http://www.travelcontinuously.com/wp-content/uploads/2018/04/empty-avatar.png"
+                id="id-card-mugshot">
+            </div>
+            <!-- // user image -->
+
+            <!-- \\ foundation logo -->
+            <div class="id-card__logo logo">
+              <span class="logo__big">BO-SEGNER</span>
+              <span class="logo__small">foundation</span>
+            </div>
+            <!-- // foundation logo -->
+
+            <!-- \\ subject id -->
+            <div class="id-card__subject-id">
+
+            </div>
+            <!-- // subject id -->
+
+            <!-- \\ experiment banner -->
+            <div class="id-card__banner">
+              <span class="id-card__banner-text">EXPERIMENT S9.3a</span>
+            </div>
+            <!-- // experiment banner -->
+
+            <!-- \\ details -->
+            <div class="id-card__details">
+              <div class="id-card__detail">
+                <span class="id-card__detail-label">Name</span>
+                <span class="id-card__detail-value" id="id-card-name">Glip-Glop Woodenstein</span>
+              </div>
+              <div class="id-card__detail">
+                <span class="id-card__detail-label">Date of Birth</span>
+                <span class="id-card__detail-value" id="id-card-date-of-birth">09/20/1980</span>
+              </div>
+              <div class="id-card__detail">
+                <span class="id-card__detail-label">Issue Date</span>
+                <span class="id-card__detail-value">08/01/2018</span>
+              </div>
+              <div class="id-card__detail">
+                <span class="id-card__detail-label">Release Date</span>
+                <span class="id-card__detail-value">08/01/2020</span>
+              </div>
+            </div>
+            <!-- // details -->
+
+            <!-- \\ short details -->
+            <div class="id-card__details id-card__details--short">
+              <div class="id-card__detail">
+                <span class="id-card__detail-label">Gender</span>
+                <span class="id-card__detail-value" id="id-card-gender">M</span>
+              </div>
+            </div>
+            <!-- // short details -->
+
+          </div>
+        </div>
+
+        <div class="id-form">
+          <div class="id-form">
+            <div class="input-row">
+              <div class="id-form__input-container">
+                <input type="text" id="name" class="input">
+                <label for="">Нэр</label>
+                <span>Нэр</span>
+              </div>
+              <div class="id-form__input-container">
+                <input type="text" id="date-of-birth" class="input">
+                <label for="">Төрсөн өдөр</label>
+                <span>Төрсөн өдөр</span>
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="id-form__input-container">
+                <select id="gender" class="input">
+                  <option value="M">Эрэгтэй</option>
+                  <option value="F">Эмэгтэй</option>
+                </select>
+              </div>
+              <div class="id-form__input-container">
+                <input type="text" id="name" class="input">
+                <label for="">Нэр</label>
+                <span>Нэр</span>
+              </div>
+            </div>
+
+            <div class="id-form__row id-form__row--inline">
+              <div class="choose-image">
+                <label for="user-image">Цээж зураг</label>
+                <input type="file" id="user-image" accept="image/*">
+              </div>
+            </div>
+            <div class="id-form__input-container">
+              <input type="text" id="name" class="input">
+              <label for="">Нэр</label>
+              <span>Нэр</span>
+            </div>
+          </div>
+          <button class="btn_1">Татаж авах</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section_4">
+    <div class="container">
+      <div class="formContainer">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">ХОЛБОО БАРИХ ХАЯГ</h3>
+            <p class="text">
+              Баянзүрх дүүрэг, Энхтайваны өргөн чөлөө,Жуковын гудамж, Улаанбаатар хот, Монгол улс
+            </p>
+
+            <div class="info">
+              <div class="information">
+                <img src="img/location.png" class="icon" alt="" />
+                <p>92 Cherry Drive Uniondale, NY 11553</p>
+              </div>
+              <div class="information">
+                <img src="img/email.png" class="icon" alt="" />
+                <p>lorem@ipsum.com</p>
+              </div>
+              <div class="information">
+                <img src="img/phone.png" class="icon" alt="" />
+                <p>+976 11-453944, 454560</p>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+
+            <form action="index.html" autocomplete="off">
+              <h3 class="title">ХОЛБОО БАРИХ</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <button type="submit" class="btn_2">
+                Илгээх
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <p id="nav-toggle">hello world!</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>БҮРЭЛДЭХҮҮН СУРГУУЛИУД</h4>
+          <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>ЭЛСЭЛТ</h4>
+          <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>ХОЛБООС</h4>
+          <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>биднийг дагах</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--=====ion icons=====-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--=====MAIN JS=====-->
+  <script src="./js/sidebar.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/idCard.js"></script>
+  <script src="./js/clock.js"></script>
+</body>
+
+</html>

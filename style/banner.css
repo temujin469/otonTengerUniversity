@@ -1,0 +1,57 @@
+.banner {
+  background: url("/image/banner.webp") no-repeat;
+  height: 100vh;
+  max-height: 900px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 100px;
+}
+
+.bannerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%;
+}
+
+.bannerWrapper div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.text {
+  max-width: 500px;
+}
+
+.banner img {
+  max-width: 400px;
+  width: 100%;
+}
+
+@media (max-width: 864px) {
+  .banner > div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 100%;
+    padding-top: 100px;
+  }
+  /* .banner img {
+    padding-top: 130px;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  } */
+}
+
+.banner h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.banner p {
+  color: white;
+}
