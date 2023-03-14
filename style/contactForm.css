@@ -1,8 +1,9 @@
 .formContainer {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  /* padding: 20px; */
+  padding: 40px 0;
+  /* min-height: 100vh; */
+  /* max-height: 700px; */
   /* overflow: hidden; */
   display: flex;
   align-items: center;
