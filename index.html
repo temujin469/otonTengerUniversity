@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./style/card.css">
   <link rel="stylesheet" href="./style/idCard.css">
   <link rel="stylesheet" href="./style/bookFlip.css">
+  <link rel="stylesheet" href="./style/modal.css">
 
   <link rel="stylesheet" href="./style/contactForm.css">
   <!--=====GOOGLE FONTS=====-->
@@ -234,7 +235,8 @@
                 </p>
               </div>
               <div class="card_footer">
-                <button class="btn_1">
+                <button class="btn_1" data-target="myModal_2">
+
                   Дэлгэрэнгүй
                 </button>
               </div>
@@ -260,7 +262,7 @@
                 </p>
               </div>
               <div class="card_footer">
-                <button class="btn_1">
+                <button class="btn_1" data-target="myModal_1">
                   Дэлгэрэнгүй
                 </button>
               </div>
@@ -469,6 +471,43 @@
     </div>
 
   </section>
+  <section>
+    <!-- The Modal -->
+    <div id="myModal_1" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...1</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal_2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...2</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <p id="nav-toggle">hello world!</p>
   <footer class="footer">
     <div class="container">
@@ -521,6 +560,7 @@
   <script src="./js/index.js"></script>
   <script src="./js/idCard.js"></script>
   <script src="./js/clock.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

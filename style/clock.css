@@ -8,8 +8,7 @@
   margin: 50px auto;
   position: relative;
   padding: 2rem;
-  /* box-shadow: 0 20px 30px rgba(104, 75, 106, 0.65); */
-  box-shadow: 0 20px 30px rgba(134, 103, 58, 0.65);
+  box-shadow: 0 20px 30px #09376957;
 
   /* background: #545271; */
   background-color: var(--primary-clr);
@@ -35,7 +34,7 @@
   height: 100%;
   border-radius: 100%;
   background: #fefefc;
-  box-shadow: 0 20px 10px rgba(62, 47, 63, 0.45);
+  box-shadow: 0 20px 10px rgba(33, 61, 112, 0.45);
   overflow: hidden;
 }
 
