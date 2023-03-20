@@ -81,7 +81,7 @@
   animation: bookCover 3s forwards;
 }
 .page.turn {
-  animation: bookOpen 3s forwards;
+  animation: bookOpen 3s infinite;
 }
 .page:nth-of-type(1) {
   animation-delay: 0.05s;
@@ -123,29 +123,41 @@
   }
 }
 @keyframes bookOpen150deg {
+  0% {
+    z-index: 999;
+  }
   30% {
+    transform: rotateY(150deg);
     z-index: 999;
   }
   100% {
-    transform: rotateY(150deg);
+    transform: rotateY(-150deg);
     z-index: 999;
   }
 }
 @keyframes bookOpen55deg {
+  0% {
+    z-index: 999;
+  }
   30% {
+    transform: rotateY(55deg);
     z-index: 999;
   }
   100% {
-    transform: rotateY(55deg);
+    transform: rotateY(-55deg);
     z-index: 999;
   }
 }
 @keyframes bookOpen30deg {
-  50% {
+  0% {
+    z-index: 999;
+  }
+  30% {
+    transform: rotateY(30deg);
     z-index: 999;
   }
   100% {
-    transform: rotateY(30deg);
+    transform: rotateY(-30deg);
     z-index: 999;
   }
 }

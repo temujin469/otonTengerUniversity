@@ -34,6 +34,8 @@ document.addEventListener(
       var m_ID = target.getAttribute("data-target");
       document.getElementById(m_ID).style.display = "block";
       document.getElementById(m_ID).classList.add("open");
+      document.body.style.height = "100vh";
+      document.body.style.overflowY = "hidden";
       e.preventDefault();
     }
     // }
@@ -46,6 +48,8 @@ document.addEventListener(
     ) {
       var modal = document.querySelector('[class="modal open"]');
       modal.style.display = "none";
+      document.body.style.height = "auto";
+      document.body.style.overflowY = "scroll";
       modal.classList.remove("open");
       e.preventDefault();
     }

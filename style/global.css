@@ -26,6 +26,7 @@
 
 ::selection {
   background: var(--primary-clr);
+  color: white;
 }
 
 body {
